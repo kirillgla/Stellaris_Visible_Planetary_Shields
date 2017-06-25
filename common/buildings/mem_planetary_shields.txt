@@ -84,7 +84,10 @@ building_mem_planetary_shield_generator = {
 	
 	potential = {
 		planet = {
-			NOT = { is_planet_class = pc_habitat }	
+			NOR = { 
+				is_planet_class = pc_habitat
+				is_planet_class = pc_asteroid
+			}	
 		}
 		NOR = {
 			has_building = "building_mem_planetary_shield_generator_heavy"
@@ -164,7 +167,10 @@ building_mem_planetary_shield_generator_heavy = {
 	
 	potential = {
 		planet = {
-			NOT = { is_planet_class = pc_habitat }	
+			NOR = { 
+				is_planet_class = pc_habitat
+				is_planet_class = pc_asteroid
+			}	
 		}
 	}
 	
