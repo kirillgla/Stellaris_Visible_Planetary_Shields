@@ -1,32 +1,34 @@
 ﻿l_russian:
  #################################################
  # Text by Malthus                               #
+ # Translation by asimbox                        #
  #################################################
  # Planetary Shields
  
  # Event Chain
- mem_planetary_shields_chain_title:0 "Planetary Shields Options"
- mem_planetary_shields_chain_desc:0 "This menu provides the option to activate or deactivate the planetary shield effects depending on the current status. If you want to deactivate this mod you have to deactivate the shield effects with the deactivation project first in order to remove the ambient objects that would stay otherwise."
+ mem_planetary_shields_chain_title:0 "Опции планетарного щита"
+ mem_planetary_shields_chain_desc:0 "Это меню предоставляет возможность активировать или деактивировать эффекты планетарного щита в зависимости от вашего желания. Если вы хотите деактивировать этот мод, сначала необходимо отключить эффекты щита с помощью проекта деактивации, чтобы удалить окружающие объекты, которые могут остаться в противном случае.
+"
 
  # Options Project
- MEM_PLANETARY_SHIELDS_DEACTIVATION_PROJECT:0 "Deactivate Shields"
- MEM_PLANETARY_SHIELDS_DEACTIVATION_PROJECT_DESC:0 "This project disables the shield effects."
- MEM_PLANETARY_SHIELDS_ACTIVATION_PROJECT:0 "Activate Shields"
- MEM_PLANETARY_SHIELDS_ACTIVATION_PROJECT_DESC:0 "This project enables the shield effects."
+ MEM_PLANETARY_SHIELDS_DEACTIVATION_PROJECT:0 "Деактивировать щит"
+ MEM_PLANETARY_SHIELDS_DEACTIVATION_PROJECT_DESC:0 "Данный проект отключает эффекты щита."
+ MEM_PLANETARY_SHIELDS_ACTIVATION_PROJECT:0 "Активировать щит"
+ MEM_PLANETARY_SHIELDS_ACTIVATION_PROJECT_DESC:0 "Данный проект включает эффекты щита."
 
  # That first building text is copied from the original game localisation
  # Standard Shield Generator
- building_mem_planetary_shield_generator:0 "Planetary Shield Generator"
+ building_mem_planetary_shield_generator:0 "Генератор планетарного щита"
  building_mem_planetary_shield_generator_desc:0 "$tech_planetary_shield_generator_desc$"
 
  # Heavy Shield Generator
- building_mem_planetary_shield_generator_heavy:0 "Planetary Barrier Shield Generator"
- building_mem_planetary_shield_generator_heavy_desc:0 "This is an advanced planetary shield generator derived from our studies of ancient shield worlds."
+ building_mem_planetary_shield_generator_heavy:0 "Генератор барьерного планетарного щита."
+ building_mem_planetary_shield_generator_heavy_desc:0 "Это усовершенствованный генератор планетарного щита, полученный из наших исследований древних миров."
 
  # Orila Shield Generator
- building_mem_planetary_shield_generator_orila:0 "Planetary Precursor Shield Generator"
- building_mem_planetary_shield_generator_orila_desc:0 "An ancient and highly advanced planetary shield generator with an incorporated energy source. Its technology may be thousands of years ahead of our own..."
+ building_mem_planetary_shield_generator_orila:0 "Генератор прекурсионного планетарного щита."
+ building_mem_planetary_shield_generator_orila_desc:0 "Древний и высокотехнологичный планетарный щит с встроенным источником энергии. Его технология может быть на тысячи лет впереди наших..."
 
  # Heavy Shield Generator Tech 
- mem_tech_planetary_shield_generator_heavy:0 "Advanced Barrier Shields"
- mem_tech_planetary_shield_generator_heavy_desc:0 "Based on our own field manipulation research as well as our previous studies of precursor shield technology a group of our scientists has put forward a promising design concept for an upgraded version of our own planetary shield generators."
+ mem_tech_planetary_shield_generator_heavy:0 "Модеризированный барьерный щит."
+ mem_tech_planetary_shield_generator_heavy_desc:0 "Основываясь на наших собственных исследованиях полевых разработок, а также на наших предыдущих исследованиях технологии прекурсивной защиты, группа наших ученых выдвинула перспективную концепцию дизайна для обновленной версии наших собственных генераторов планетарных щитов."
