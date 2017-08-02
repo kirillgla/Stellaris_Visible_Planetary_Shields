@@ -5,28 +5,28 @@
  # Planetary Shields
  
  # Event Chain
- mem_planetary_shields_chain_title:0 "Planetary Shields Options"
- mem_planetary_shields_chain_desc:0 "This menu provides the option to activate or deactivate the planetary shield effects depending on the current status. If you want to deactivate this mod you have to deactivate the shield effects with the deactivation project first in order to remove the ambient objects that would stay otherwise."
+ mem_planetary_shields_chain_title:0 "Planetenschild Optionen"
+ mem_planetary_shields_chain_desc:0 "Dieses Menü bietet die Möglichkeit, die planetarischen Schildeffekte je nach aktuellem Status zu aktivieren oder zu deaktivieren. Um diesen Mod sauber zu deaktivieren, muss zuerst Deaktivierungsprojekt ausgeführt werden, um die Umgebungsobjekte zu entfernen, die sonst bleiben würden."
 
  # Options Project
- MEM_PLANETARY_SHIELDS_DEACTIVATION_PROJECT:0 "Deactivate Shields"
- MEM_PLANETARY_SHIELDS_DEACTIVATION_PROJECT_DESC:0 "This project disables the shield effects."
- MEM_PLANETARY_SHIELDS_ACTIVATION_PROJECT:0 "Activate Shields"
- MEM_PLANETARY_SHIELDS_ACTIVATION_PROJECT_DESC:0 "This project enables the shield effects."
+ MEM_PLANETARY_SHIELDS_DEACTIVATION_PROJECT:0 "Schilde deaktivieren"
+ MEM_PLANETARY_SHIELDS_DEACTIVATION_PROJECT_DESC:0 "Dieses Projekt deaktiviert die Schild-Effekte. "
+ MEM_PLANETARY_SHIELDS_ACTIVATION_PROJECT:0 "Schilde aktivieren"
+ MEM_PLANETARY_SHIELDS_ACTIVATION_PROJECT_DESC:0 "Dieses Projekt aktiviert die Schild-Effekte."
 
  # That first building text is copied from the original game localisation
  # Standard Shield Generator
- building_mem_planetary_shield_generator:0 "Planetary Shield Generator"
+ building_mem_planetary_shield_generator:0 "Planetarischer Schildgenerator"
  building_mem_planetary_shield_generator_desc:0 "$tech_planetary_shield_generator_desc$"
 
  # Heavy Shield Generator
- building_mem_planetary_shield_generator_heavy:0 "Planetary Barrier Shield Generator"
- building_mem_planetary_shield_generator_heavy_desc:0 "This is an advanced planetary shield generator derived from our studies of ancient shield worlds."
+ building_mem_planetary_shield_generator_heavy:0 "Planetarischer Barriereschildgenerator"
+ building_mem_planetary_shield_generator_heavy_desc:0 "Dies ist ein fortschrittlicher planetarischer Schildgenerator, der aus unseren Studien der alten Schildwelten resultiert."
 
  # Orila Shield Generator
- building_mem_planetary_shield_generator_orila:0 "Planetary Precursor Shield Generator"
- building_mem_planetary_shield_generator_orila_desc:0 "An ancient and highly advanced planetary shield generator with an incorporated energy source. Its technology may be thousands of years ahead of our own..."
+ building_mem_planetary_shield_generator_orila:0 "Planetarischer Vorgäerschildgenerator"
+ building_mem_planetary_shield_generator_orila_desc:0 "Ein alter und hochentwickelter planetarischer Schildgenerator mit einer integrierten Energiequelle. Seine Technologie ist der unseren um tausende Jahre voraus..."
 
  # Heavy Shield Generator Tech 
- mem_tech_planetary_shield_generator_heavy:0 "Advanced Barrier Shields"
- mem_tech_planetary_shield_generator_heavy_desc:0 "Based on our own field manipulation research as well as our previous studies of precursor shield technology a group of our scientists has put forward a promising design concept for an upgraded version of our own planetary shield generators."
+ mem_tech_planetary_shield_generator_heavy:0 "Fortschrittlicher Barriereschildgenerator"
+ mem_tech_planetary_shield_generator_heavy_desc:0 "Basierend auf unserer eigenen Feldmanipulationsforschung sowie unseren Studien der Vorgäer-Schild-Technologie hat eine Gruppe unserer Wissenschaftler ein vielversprechendes Designkonzept für eine verbesserte Version unserer eigenen Planetenschildgeneratoren vorgestellt."
