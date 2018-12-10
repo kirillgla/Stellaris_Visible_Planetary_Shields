@@ -4,7 +4,6 @@ namespace = mem_planetary_shields
 
 #A building construction has been completed.
 # This = Planet
-# From = Tile
 planet_event = {
 	id = mem_planetary_shields.1
 	hide_window = yes
@@ -16,9 +15,7 @@ planet_event = {
 			has_global_flag = mem_planetary_shields_OFF
 		}
 		is_ringworld = no
-		from = {
-			has_building = building_mem_planetary_shield_generator
-		}
+		has_building = building_mem_planetary_shield_generator
 	}
 	
 	immediate = {
@@ -28,7 +25,6 @@ planet_event = {
 
 #A building construction has been completed.
 # This = Planet
-# From = Tile
 planet_event = {
 	id = mem_planetary_shields.2
 	hide_window = yes
@@ -52,10 +48,7 @@ planet_event = {
 			every_system_planet = {
 				limit = {
 					is_ringworld = no
-					any_tile = {
-						has_building = building_mem_planetary_shield_generator
-						is_ruined = no
-					}
+					has_building = building_mem_planetary_shield_generator
 				}
 				solar_system = {
 					random_system_planet = {
@@ -460,39 +453,39 @@ planet_event = {
 # Planet has reached 0 health
 # This = Planet
 # From = Bombarder
-planet_event = {
-	id = mem_planetary_shields.3
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		# check for any_shield building
-		IF = {
-			limit = {
-				any_tile = {
-					OR = {
-						has_building = building_mem_planetary_shield_generator
-						has_building = building_mem_planetary_shield_generator_heavy
-						has_building = building_mem_planetary_shield_generator_orila
-					}
-					is_ruined = no
-				}
-			}
-			random_tile = {
-				limit = {
-					OR = {
-						has_building = building_mem_planetary_shield_generator
-						has_building = building_mem_planetary_shield_generator_heavy
-						has_building = building_mem_planetary_shield_generator_orila
-					}
-					is_ruined = no
-				}
-				set_ruined = yes
-			}
-		}
-	}
-}
+#planet_event = {
+#	id = mem_planetary_shields.3
+#	hide_window = yes
+#	
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		# check for any_shield building
+#		IF = {
+#			limit = {
+#				any_tile = {
+#					OR = {
+#						has_building = building_mem_planetary_shield_generator
+#						has_building = building_mem_planetary_shield_generator_heavy
+#						has_building = building_mem_planetary_shield_generator_orila
+#					}
+#					is_ruined = no
+#				}
+#			}
+#			random_tile = {
+#				limit = {
+#					OR = {
+#						has_building = building_mem_planetary_shield_generator
+#						has_building = building_mem_planetary_shield_generator_heavy
+#						has_building = building_mem_planetary_shield_generator_orila
+#					}
+#					is_ruined = no
+#				}
+#				set_ruined = yes
+#			}
+#		}
+#	}
+#}
 
 # For heavy shields
 
@@ -524,10 +517,7 @@ planet_event = {
 			every_system_planet = {
 				limit = {
 					is_ringworld = no
-					any_tile = {
-						has_building = building_mem_planetary_shield_generator_heavy
-						is_ruined = no
-					}
+					has_building = building_mem_planetary_shield_generator_heavy
 				}
 				solar_system = {
 					random_system_planet = {
@@ -960,10 +950,7 @@ planet_event = {
 			every_system_planet = {
 				limit = {
 					is_ringworld = no
-					any_tile = {
-						has_building = building_mem_planetary_shield_generator_orila
-						is_ruined = no
-					}
+					has_building = building_mem_planetary_shield_generator_orila
 				}
 				solar_system = {
 					random_system_planet = {
@@ -1859,9 +1846,7 @@ ship_event = {
 				is_planet_class = pc_shielded
 			}
 			from = {
-				any_tile = {
-					has_building = building_mem_planetary_shield_generator_orila
-				}
+				has_building = building_mem_planetary_shield_generator_orila
 			}
 		}
 		NOT = {
