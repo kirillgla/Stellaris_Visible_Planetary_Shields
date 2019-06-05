@@ -12,6 +12,12 @@ building_planetary_shield_generator = {
 	
 	allow = {
 		has_upgraded_capital = yes
+		owner = { is_ai = no }
+	}
+	
+	destroy_trigger = {
+		exists = owner
+		owner = { is_ai = yes }
 	}
 	
 	planet_modifier = {
@@ -65,6 +71,7 @@ building_mem_planetary_shield_generator = {
 
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = { is_gestalt = no }
 		}
 		modifier = {
@@ -73,6 +80,7 @@ building_mem_planetary_shield_generator = {
 	}
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
@@ -97,8 +105,7 @@ building_mem_planetary_shield_generator = {
 		
 	potential = {
 		planet = {
-			NOR = { 
-				is_planet_class = pc_habitat
+			NOT = {
 				is_planet_class = pc_asteroid
 			}	
 		}
@@ -163,6 +170,7 @@ building_mem_planetary_shield_generator_heavy = {
 	}
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
@@ -223,8 +231,13 @@ building_mem_planetary_shield_generator_orila = {
 
 	category = army
 
+	resources = {
+		category = planet_buildings
+	}
+
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = { is_gestalt = no }
 		}
 		modifier = {
@@ -233,6 +246,7 @@ building_mem_planetary_shield_generator_orila = {
 	}
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
@@ -257,5 +271,9 @@ building_mem_planetary_shield_generator_orila = {
 	
 	planet_modifier = {
 		planet_orbital_bombardment_damage = -0.7
+	}
+
+	ai_weight = {
+		weight = 100000
 	}
 }

@@ -15,6 +15,10 @@ planet_event = {
 			has_global_flag = mem_planetary_shields_OFF
 		}
 		is_ringworld = no
+		NOR = {
+			is_planet_class = pc_mem_vazuran_habitat
+			is_planet_class = pc_habitat
+		}
 		has_building = building_mem_planetary_shield_generator
 	}
 	
@@ -48,6 +52,10 @@ planet_event = {
 			every_system_planet = {
 				limit = {
 					is_ringworld = no
+					NOR = {
+						is_planet_class = pc_mem_vazuran_habitat
+						is_planet_class = pc_habitat
+					}
 					has_building = building_mem_planetary_shield_generator
 				}
 				solar_system = {
@@ -517,6 +525,10 @@ planet_event = {
 			every_system_planet = {
 				limit = {
 					is_ringworld = no
+					NOR = {
+						is_planet_class = pc_mem_vazuran_habitat
+						is_planet_class = pc_habitat
+					}
 					has_building = building_mem_planetary_shield_generator_heavy
 				}
 				solar_system = {
@@ -950,6 +962,10 @@ planet_event = {
 			every_system_planet = {
 				limit = {
 					is_ringworld = no
+					NOR = {
+						is_planet_class = pc_mem_vazuran_habitat
+						is_planet_class = pc_habitat
+					}
 					has_building = building_mem_planetary_shield_generator_orila
 				}
 				solar_system = {
@@ -1366,7 +1382,6 @@ event = {
 				is_ai = no
 			}
 			country_event = { id = mem_planetary_shields.11 days = 4 }
-			country_event = { id = mem_planetary_shields.14 days = 5 }
 		}
 	}
 }
@@ -1859,108 +1874,6 @@ ship_event = {
 	immediate = {
 		owner = {
 			set_country_flag = mem_planetary_shield_worlds_surveyed
-		}
-	}
-}
-
-country_event = {
-	id = mem_planetary_shields.14
-	hide_window = yes
-	
-	is_triggered_only = yes
-		
-	immediate = {
-		begin_event_chain = {
-			event_chain = mem_planetary_shields_chain
-			target = THIS
-		}
-		capital_scope = {
-			enable_special_project = {
-				name = MEM_PLANETARY_SHIELDS_DEACTIVATION_PROJECT
-				location = this
-				owner = PREV
-			}
-		}
-	}
-}
-
-# deactivate shield effects
-planet_event = {
-	id = mem_planetary_shields.15
-	hide_window = yes
-	
-	is_triggered_only = yes
-
-	immediate = {
-		owner = {
-			end_event_chain = mem_planetary_shields_chain
-			begin_event_chain = {
-				event_chain = mem_planetary_shields_chain
-				target = THIS
-			}
-			capital_scope = {
-				enable_special_project = {
-					name = MEM_PLANETARY_SHIELDS_ACTIVATION_PROJECT
-					location = this
-					owner = PREV
-				}
-			}
-			# deactivate shielded world effect
-			country_event = { id = mem_planetary_shields.12 }
-		}
-		set_global_flag = mem_planetary_shields_OFF
-		every_ambient_object = {
-			limit = {
-				OR = {
-					has_ambient_object_flag = mem_planetary_shield_01
-					has_ambient_object_flag = mem_planetary_shield_02
-					has_ambient_object_flag = mem_planetary_shield_03
-				}
-			}
-			destroy_ambient_object = this
-		}
-	}
-}
-
-# activate shield effects
-planet_event = {
-	id = mem_planetary_shields.16
-	hide_window = yes
-	
-	is_triggered_only = yes
-
-	immediate = {
-		owner = {
-			end_event_chain = mem_planetary_shields_chain
-			begin_event_chain = {
-				event_chain = mem_planetary_shields_chain
-				target = THIS
-			}
-			capital_scope = {
-				enable_special_project = {
-					name = MEM_PLANETARY_SHIELDS_DEACTIVATION_PROJECT
-					location = this
-					owner = PREV
-				}
-			}
-			# activate shielded world effect
-			country_event = { id = mem_planetary_shields.11 }
-		}
-		remove_global_flag = mem_planetary_shields_OFF
-		every_planet = {
-			limit = {
-				OR = {
-					has_building = building_mem_planetary_shield_generator
-					has_building = building_mem_planetary_shield_generator_heavy
-					has_building = building_mem_planetary_shield_generator_orila
-				}
-			}
-			# standard shields
-			planet_event = { id = mem_planetary_shields.2 }
-			# heavy shields
-			planet_event = { id = mem_planetary_shields.4 }
-			# orila shields
-			planet_event = { id = mem_planetary_shields.5 }
 		}
 	}
 }
