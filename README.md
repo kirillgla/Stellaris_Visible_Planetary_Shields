@@ -1,0 +1,1 @@
+This is the 'Visible Planetary Shields' mod for Stellaris
